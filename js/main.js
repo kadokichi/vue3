@@ -1,15 +1,17 @@
 const app = Vue.createApp({
   data: () => ({
-    basePrice: ''
+    
   }),
 	computed: {
-		taxIncludePrice: {
-			get: function() {
-				return this.basePrice * 1.1
-			},
-			set: function(value) {
-				this.basePrice = value / 1.1
-			}
+		computedNumber: function() {
+			console.log('computed')
+			return Math.random()
+		}
+	},
+	methods: {
+		methodsNumber: function() {
+			console.log('methods')
+			return Math.random()
 		}
 	}
 })
