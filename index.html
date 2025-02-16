@@ -8,10 +8,11 @@
 </head>
 <body>
   <div id="app">
-    <h2>Mastache</h2>
-		<p>{{ message }}</p>
-		<h2>v-text</h2>
-		<p v-text="message"></p>
+    <p>{{ message }}</p>
+		<p>{{ number + 1 }}</p>
+		<p>{{ message.split('').reverse().join('') }}</p>
+		<p>{{ ok ? 'Yes' : 'No' }}</p>
+		<p>{{ ok ? message : 'No' }}</p>
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/main.js"></script>
