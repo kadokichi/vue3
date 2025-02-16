@@ -8,11 +8,8 @@
 </head>
 <body>
   <div id="app">
-    <p>{{ message }}</p>
-		<p>{{ number + 1 }}</p>
-		<p>{{ message.split('').reverse().join('') }}</p>
-		<p>{{ ok ? 'Yes' : 'No' }}</p>
-		<p>{{ ok ? message : 'No' }}</p>
+    <a v-bind:href="url">Link1</a><br>
+		<a :href="url">Link2</a>
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/main.js"></script>
