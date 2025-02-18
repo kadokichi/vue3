@@ -8,18 +8,12 @@
 </head>
 <body>
   <div id="app">
-		<p v-if="color === 'red'">
-			Stop
+		<p v-show="toggle">
+			Hello Vue.js!
 		</p>
-		<p v-else-if="color === 'yellow'">
-			Caution
-		</p>
-		<p v-else-if="color === 'blue'">
-			Go
-		</p>
-		<p v-else>
-			Not red/yellow/blue
-		</p>
+		<!-- <p v-else>
+			Good Bye v-showとは組み合わせて使えない
+		</p> -->
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
 	<script src="https://unpkg.com/axios@0.21.1/dist/axios.js"></script>
