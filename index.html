@@ -9,12 +9,12 @@
 <body>
   <div id="app">
 		<p>Hello 
-			<span v-bind:class="isLarge ? largeClass: ''">
+			<span v-bind:style="{ color: color, fontSize: fontSize + 'px' }">
 				Vue.js
 			</span>
 		</p>
 		<p>Hello 
-			<span v-bind:class="[isLarge ? largeClass : '', dangerClass]">
+			<span v-bind:style="{ color: color, 'font-size': fontSize + 'px' }">
 				Vue.js
 			</span>
 		</p>
