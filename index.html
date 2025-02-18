@@ -9,7 +9,10 @@
 <body>
   <div id="app">
 		<p>Hello 
-			<span class="bg-gray text-blue" v-bind:class="{ large: isLarge, 'text-danger': hasError }">Vue.js</span>
+			<span v-bind:class="largeClass">Vue.js</span>
+		</p>
+		<p>Hello 
+			<span v-bind:class="[largeClass, dangerClass]">Vue.js</span>
 		</p>
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
