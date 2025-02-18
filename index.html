@@ -8,10 +8,11 @@
 </head>
 <body>
   <div id="app">
-		<p>Hello 
-			<span v-bind:style="styleObject">
-				Vue.js
-			</span>
+		<p v-if="toggle">
+			Yes
+		</p>
+		<p v-else>
+			No
 		</p>
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
