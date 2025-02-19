@@ -1,6 +1,6 @@
 const app = Vue.createApp({
   data: () => ({
-    toggle: true
+    counter: 0
   })
 })
 app.mount('#app')

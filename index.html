@@ -8,12 +8,10 @@
 </head>
 <body>
   <div id="app">
-		<p v-show="toggle">
-			Hello Vue.js!
+		<p>
+			{{ counter }}
 		</p>
-		<!-- <p v-else>
-			Good Bye v-showとは組み合わせて使えない
-		</p> -->
+		<button v-on:click="counter++">click</button>
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
 	<script src="https://unpkg.com/axios@0.21.1/dist/axios.js"></script>
