@@ -1,10 +1,11 @@
 const app = Vue.createApp({
   data: () => ({
-    counter: 0
+    message: ''
   }),
 	methods: {
-		clickHandler: function(event) {
-			this.counter++
+		clickHandler: function(message) {
+			//console.log(message)
+			this.message = message
 		}
 	}
 })
