@@ -8,13 +8,13 @@
 </head>
 <body>
   <div id="app">
+		<input type="radio" id="red" value="Red" v-model="color">
 		<label for="red">Red</label>
-		<input type="checkbox" id="red" value="Red" v-model="colors">
+		<input type="radio" id="green" value="Green" v-model="color">
 		<label for="green">Green</label>
-		<input type="checkbox" id="green" value="Green" v-model="colors">
+		<input type="radio" id="blue" value="Blue" v-model="color">
 		<label for="blue">Blue</label>
-		<input type="checkbox" id="blue" value="Blue" v-model="colors">
-		<p>{{ colors }}</p>
+		<p>{{ color }}</p>
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
 	<script src="https://unpkg.com/axios@0.21.1/dist/axios.js"></script>
